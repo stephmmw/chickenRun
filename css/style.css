@@ -1,0 +1,22 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: gray;
+}
+.flex-row{
+    display: flex;
+    justify-content: center;
+}
+.game-canvas{
+    width:100%;
+    height: 100vh;
+    background: #fff;
+}
+
+@media screen and (min-width: 1024px){
+    .game-canvas{
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+        height: 94vh;
+    }
+}
