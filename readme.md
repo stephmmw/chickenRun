@@ -13,6 +13,8 @@ The player controls chicken running from a butcher, while avoiding obstacles, wh
   * scripts/
     * game.js
     * player.js
+    * powerups.js
     * obstacles.js
     * utils.js
   * images/
+  * audio/
