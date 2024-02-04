@@ -1,22 +1,79 @@
 body{
     margin: 0;
     padding: 0;
-    background: gray;
+    background: #000;
+}
+.container-fluid{
+    margin: 0;
+    padding: 0;
 }
 .flex-row{
     display: flex;
     justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+.game-container{
+    width:100%;
+    position: relative;
+    text-align: center;
+}
+.version{
+    padding-bottom: 10px;
+    color: #fff;
 }
 .game-canvas{
     width:100%;
     height: 100vh;
+    display: block;
     background: #fff;
 }
+.overlays{
+    position: absolute;
+    display: block;
+    top: 0vh;
+    bottom: 0vh;
+    width:100%;
+    height: 100vh;
+    background-image: url('../images/home.gif');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.overlays .buttons{
+    padding: 5px;
 
-@media screen and (min-width: 1024px){
+}
+.overlays .game-label{
+    width: 100%;
+    min-height: calc(94vh/2);
+}
+.overlays .buttons .button{
+    min-width: 55%;
+    margin-bottom: 1.25rem;
+    padding: 7px;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #000;
+    color: #fff;
+    border: 1px #fff solid;
+    border-radius: 20px;
+}
+.overlays .buttons .button:hover,
+.overlays .buttons .button:active{
+    background-color: #1f1f1f;
+}
+
+@media screen and (min-width: 1025px){
     .game-canvas{
         margin-top: 2vh;
         margin-bottom: 2vh;
+        height: 94vh;
+    }
+    .overlays{
+        top: 0vh;
+        bottom: 0vh;
         height: 94vh;
     }
 }

@@ -12,8 +12,21 @@
 <body>
     <div class="container-fluid">
         <div class="row flex-row">
-            <div class="col-12 col-lg-5">
-                <canvas id="gameCanvas" class="game-canvas"></canvas>
+            <div class="col-12 col-md-5 col-lg-5">
+                <div id="gameContainer" class="game-container">
+                    <canvas id="gameCanvas" class="game-canvas"></canvas>
+
+                    <!-- overlay content -->
+                    <div id="overlays" class="overlays">
+                        <div id="gameLabel" class="game-label"></div>
+
+                        <!--Buttons-->
+                        <div id="buttons" class="buttons"></div>
+
+                        <!--Version-->
+                        <div id="version" class="version">V 0.1</div>
+                    </div>  
+                </div>                           
             </div>
         </div>
     </div>    
